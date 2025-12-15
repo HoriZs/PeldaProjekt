@@ -1,0 +1,25 @@
+﻿@model StudentDTO
+
+<h2>@Model.Nev tanuló adatai</h2>
+
+<table class="table-striped mt-3 table">
+    <thead>
+        <tr>
+            <th>OM azonosító</th>
+            <th>Név</th>
+            <th>Kor</th>
+            <th>Átlag</th>
+        </tr>
+    </thead>
+    <tbody>
+            <tr>
+                <td>@Model.OMazonosito</td>
+                <td>@Model.Nev</td>
+                <td>@Model.EletKor</td>
+                <td>@Model.Atlag</td>
+            </tr>
+    </tbody>
+</table>
+
+<a asp-action="Index" class="btn btn-primary mt-3">
+    Vissza a főoldalra</a>

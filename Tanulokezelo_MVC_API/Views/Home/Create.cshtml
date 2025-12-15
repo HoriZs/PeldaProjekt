@@ -1,0 +1,27 @@
+﻿@model Tanulokezelo_MVC_API.Models.StudentDTO
+
+<h2>Tanuló felvétele a listába</h2>
+
+<form method="post">
+    <div>
+        <label>OM azonosító: </label>
+        <input asp-for="OMazonosito" type="number" max="99999999"
+        class="form-control"/>
+    </div>
+    <div>
+        <label>Név: </label>
+        <input asp-for="Nev" class="form-control"/>
+    </div>
+    <div>
+        <label>Életkor: </label>
+        <input asp-for="EletKor" type="number" class="form-control"/>
+    </div>
+    <div>
+        <label>Átlag: </label>
+        <input asp-for="Atlag" type="number" step="0.01"  
+        class="form-control" />
+    </div>
+    <button type="submit" class="btn btn-primary mt-3">Tanuló létrehozás</button>
+</form>
+
+

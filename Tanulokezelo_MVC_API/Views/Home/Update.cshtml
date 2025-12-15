@@ -1,0 +1,31 @@
+﻿@model StudentDTO
+
+<h2>@Model.Nev, tanuló módosítása</h2>
+
+<form method="post">
+    <div>
+        <label>OM azonosító: </label>
+        <input asp-for="OMazonosito" type="number"
+               class="form-control" value="@Model.OMazonosito" readonly/>
+    </div>
+    <div>
+        <label>Név: </label>
+        <input asp-for="Nev" class="form-control" value="@Model.Nev" />
+    </div>
+    <div>
+        <label>Életkor: </label>
+        <input asp-for="EletKor" type="number" class="form-control"
+               value="@Model.EletKor" />
+    </div>
+    <div>
+        <label>Átlag: </label>
+        <input asp-for="Atlag" 
+               class="form-control" value="@Model.Atlag" />
+    </div>
+    <button type="submit" class="btn btn-primary mt-3">Módosítás</button>
+</form>
+
+
+<a asp-action="Index" class="btn btn-primary mt-3">
+    Vissza a főoldalra
+</a>
